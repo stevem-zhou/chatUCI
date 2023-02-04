@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+/*整个网页*/
+.main_box{
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    /* Fits the background */
+    background: url("https://rare-gallery.com/uploads/posts/1154930-minimalism-humor-grass-green-ants-green-background-Tetris-leaf-shape-line-screenshot-font.png") no-repeat center center fixed;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+.main_box .sidebar_menu{
+    border-right: 1px solid black;
+    position: fixed;
+    height: 100vh;
+    width: 280px;
+    left: -280px;
+    background-color: rgba(129, 250, 118, 0.5);
+    box-shadow: 0px 0px 10px  green;
+    transition: all 0.5s linear;
+}
+.sidebar_menu .logo{
+    /* Open Chats */
+    position: absolute;
+    padding-left: 10px;
+    width: 100%;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 60px;
+    box-shadow: 0px 2px 4px green;
+}
+
+
+.sidebar_menu .list{
+    position: absolute;
+    margin-top: 80px;
+    width:100%;
+}
+
+/*调动课之间的间隔等等*/
+.sidebar_menu .list li{
+    margin-top: 6px;
+    margin-left: 10px;
+    padding: 5px 20px;
+    list-style: none;
+}
+
+
+/*课的链接style*/
+.sidebar_menu .list a{
+    color: black;
+    font-size: 15px;
+    text-decoration: none;
+}
+
+/*课链接鼠标hover over时的style*/
+.sidebar_menu .list a:hover{
+    color: orange;
+}
+
+/*鼠标hover over时课的style*/
+.sidebar_menu .list li:hover{
+    border-left: 3px solid black;
+    /* 放大时间 */
+    transition:all 1s;
+    /* 放大1.1倍 */
+    transform:scale(1.1);
+    box-shadow: 0 2px 4px rgba(20, 20, 20, 0.5);
+}
+
+#navbar{
+    /* Remove the check box */
+    display: none; 
+}
+
+/*Navigation*/
+.main_box .btn_one i{
+    color: black;
+    font-size: 20px;
+    font-weight: 700;
+    position: absolute;
+    left: 12px;
+    line-height: 40px;
+    cursor: pointer;
+    
+}
+
+.main_box .btn_one i:hover
+{
+    color:orange;
+    transition:all 1s;
+    transform: scale(1.2);
+}
+
+ .sidebar_menu .btn_two i{
+    font-size: 25px;
+    line-height: 60px;
+    position: absolute;
+    left: 240px;
+    cursor: pointer;
+}
+
+.btn_two i:hover{
+    transition:all 1s;
+    transform: scale(1.1);
+}
+
+/*Use flexbox to organize the page as column*/
+.wholePage
+{
+    /* defines a flex container and enables a flex context for all its direct children */
+    display:flex;
+    /* flex-flow: column will make the flexboxes(welcome and searchBar) go in 1 column*/
+    /* wrap: flex items will wrap onto multiple lines, from top to bot */
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+.wholePage .welcome
+{
+    padding: 3cm 8cm;
+    margin-top: 2cm;
+    background:url("https://rare-gallery.com/uploads/posts/4598869-threadless-simple-minimalism-humor-pacman-trees-green-background-simple-background.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    border: 1px solid black;
+    box-shadow: 0px 5px 4px green;
+    
+}
+
+.wholePage .searchBar
+{
+    margin-top: 50px;
+}
+
+#navbar:checked ~ .sidebar_menu{
+    /* The space between the left most webpage and the menu */
+    left: 0;
+}
+#navbar:checked ~ .btn_one i{
+    /* Once clicked make the navbar icon disappear */
+    opacity: 0;
+}
+#navbar:checked ~ .sidebar_menu .btn_two i{
+    /* Once clicked display the crossout button */
+    opacity: 1;
+}
