@@ -15,7 +15,6 @@ body {
     border-bottom: 1px solid #e4ebf3;
     /* background-color: #63a18a; */
     border-radius: 35px;
-
 }
 
 .container {
@@ -74,43 +73,3 @@ body {
 .button:active {
     background-color: #43464d;
 }
-
-/* .middle-design {
-    background-color: #63a18a;
-    background-image: url("https://i.giphy.com/media/MfnJATkfrAIBG/giphy.webp");
-    display: grid;
-    align-items: center;
-    text-align: center;
-    padding-top: 25%;
-    padding-bottom: 25%;
-    border-radius: 25px;
-    padding-right: 19%;
-    padding-left: 19%;
-
-}
-
-.title {
-    font-weight: bold;
-    font-size: 30px;
-    background-color: #45846d;
-    border-top-left-radius: 25px;
-    border-top-right-radius: 25px;
-}
-
-.login {
-    background-color: #45846d;
-    padding-bottom: 4%;
-    border-bottom-left-radius: 25px;
-    border-bottom-right-radius: 25px;
-}
-
-.button {
-    font-size: 20px;
-    background-color: #45846d;
-    border: none;
-}
-
-.h2 {
-    font-size: 100px;
-
-} */
