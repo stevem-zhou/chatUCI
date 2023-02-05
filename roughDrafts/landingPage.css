@@ -1,0 +1,75 @@
+body {
+    /* background-color: #1d2e28; */
+    background-color: #34a249;
+    background-image: url("https://rare-gallery.com/uploads/posts/1154930-minimalism-humor-grass-green-ants-green-background-Tetris-leaf-shape-line-screenshot-font.png");
+    padding-top: 25%;
+    padding-bottom: 25%;
+    padding-left: 31%;
+    padding-right: 31%;
+}
+
+.middle-design {
+    position: relative;
+    padding: 60px 20px;
+    background-color: #419639;
+    border-bottom: 1px solid #e4ebf3;
+    /* background-color: #63a18a; */
+    border-radius: 35px;
+}
+
+.container {
+    width: 500px;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.split-img {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 20px;
+    size: 1%;
+    height: 1%;
+}
+
+.split {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 20px;
+}
+
+.shadow-two {
+    box-shadow: 0 4px 24px 0 rgba(150, 163, 181, 0.08);
+}
+
+.summary {
+    margin-bottom: 24px;
+}
+
+.button {
+    padding: 12px 25px;
+    background-color: #1a1b1f;
+    transition: all 200ms ease;
+    color: #fff;
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+}
+
+.button:hover {
+    background-color: #32343a;
+    color: #fff;
+}
+
+.button:active {
+    background-color: #43464d;
+}
